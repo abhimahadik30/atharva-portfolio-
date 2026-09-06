@@ -105,7 +105,7 @@ git push -u origin main
 ### Step 4 — Your live URL
 
 ```
-https://USERNAME.github.io/atharva-portfolio/
+https://abhimahadik30.github.io/atharva-portfolio/
 ```
 
 ---
