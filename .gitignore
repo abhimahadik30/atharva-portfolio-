@@ -1,0 +1,42 @@
+# ================================================================
+# .gitignore — Atharva Mangesh Mahadik Portfolio
+# ================================================================
+
+# ----- Editor & IDE folders -----
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ----- OS generated files -----
+.DS_Store           # macOS
+Thumbs.db           # Windows
+Desktop.ini
+ehthumbs.db
+
+# ----- Node / npm (if you ever add tooling) -----
+node_modules/
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# ----- Build output (if added later) -----
+dist/
+build/
+.cache/
+
+# ----- Environment / secrets -----
+.env
+.env.local
+.env.*.local
+
+# ----- Logs -----
+*.log
+logs/
+
+# ----- Temporary files -----
+*.tmp
+*.bak
+*.swp
+*~

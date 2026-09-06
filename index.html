@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ============================================================
+         META & SEO
+    ============================================================ -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the site responsive — critical for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title shown in browser tab and Google search results -->
+    <title>Atharva Mangesh Mahadik | CSE AIML Portfolio</title>
+
+    <!-- SEO meta description (shown in Google search snippets) -->
+    <meta name="description" content="Portfolio of Atharva Mangesh Mahadik, a CSE AIML student interested in Artificial Intelligence, Machine Learning, Software Development and competitive gaming.">
+
+    <!-- SEO keywords -->
+    <meta name="keywords" content="Atharva Mahadik, CSE AIML, portfolio, artificial intelligence, machine learning, software developer, Free Fire, gaming, B.Tech">
+
+    <!-- Author -->
+    <meta name="author" content="Atharva Mangesh Mahadik">
+
+    <!-- Browser tab / Android Chrome theme colour -->
+    <meta name="theme-color" content="#a855f7">
+
+    <!-- Tells search engines to index this page -->
+    <meta name="robots" content="index, follow">
+
+    <!-- ============================================================
+         OPEN GRAPH — for sharing link previews on WhatsApp,
+         LinkedIn, Twitter, Facebook etc.
+    ============================================================ -->
+    <meta property="og:type"        content="website">
+    <meta property="og:title"       content="Atharva Mangesh Mahadik | CSE AIML Portfolio">
+    <meta property="og:description" content="Portfolio of Atharva Mangesh Mahadik, a CSE AIML student interested in Artificial Intelligence, Machine Learning, Software Development and competitive gaming.">
+    <meta property="og:image"       content="assets/images/1000184461.jpg">
+    <meta property="og:url"         content="https://USERNAME.github.io/atharva-portfolio/">
+    <meta property="og:site_name"   content="Atharva Mahadik Portfolio">
+
+    <!-- Twitter card (used by Twitter/X for link previews) -->
+    <meta name="twitter:card"        content="summary_large_image">
+    <meta name="twitter:title"       content="Atharva Mangesh Mahadik | CSE AIML Portfolio">
+    <meta name="twitter:description" content="CSE AIML student passionate about AI, ML, and competitive gaming.">
+    <meta name="twitter:image"       content="assets/images/1000184461.jpg">
+
+    <!-- ============================================================
+         FAVICON
+         Place favicon.ico or favicon.png in the project root.
+         All three lines below cover every browser & device.
+    ============================================================ -->
+    <link rel="icon"             type="image/x-icon" href="favicon.ico">
+    <link rel="icon"             type="image/png"    href="favicon.png">
+    <link rel="apple-touch-icon"                     href="favicon.png">
+
+    <!-- ============================================================
+         FONTS — loaded early so text renders with correct typeface
+    ============================================================ -->
+    <!-- Orbitron: sci-fi / gaming headings  |  Rajdhani: clean body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- ============================================================
+         STYLESHEET
+    ============================================================ -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ============================================================
+         STICKY NAVIGATION BAR
+         JS (script.js) handles open/close and close-on-link-click.
+         The data-* attributes are hooks for the JS.
+    ============================================================ -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+
+        <!-- Brand / logo text -->
+        <div class="nav-brand">
+            <a href="#home" class="brand-text" aria-label="Atharva Mahadik - Home">
+                AM<span class="brand-highlight">.</span>
+            </a>
+        </div>
+
+        <!-- Desktop nav links (also shown as slide-in drawer on mobile) -->
+        <ul class="nav-links" id="nav-links" role="list">
+            <li><a href="#about"     class="nav-link" aria-label="About section">About</a></li>
+            <li><a href="#education" class="nav-link" aria-label="Education section">Education</a></li>
+            <li><a href="#skills"    class="nav-link" aria-label="Skills section">Skills</a></li>
+            <li><a href="#gaming"    class="nav-link" aria-label="Free Fire section">Free Fire</a></li>
+            <li><a href="#strengths" class="nav-link" aria-label="Strengths section">Strengths</a></li>
+            <li><a href="#goals"     class="nav-link" aria-label="Goals section">Goals</a></li>
+            <li><a href="#projects"  class="nav-link" aria-label="Projects section">Projects</a></li>
+            <li><a href="#contact"   class="nav-link" aria-label="Contact section">Contact</a></li>
+        </ul>
+
+        <!-- Hamburger button — visible only on mobile (controlled by CSS + JS) -->
+        <button
+            class="nav-hamburger"
+            id="nav-hamburger"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="nav-links"
+            type="button"
+        >
+            <!-- Three lines that animate into an X -->
+            <span class="ham-line ham-line-1"></span>
+            <span class="ham-line ham-line-2"></span>
+            <span class="ham-line ham-line-3"></span>
+        </button>
+
+        <!-- Dark overlay behind the open mobile menu — click to close -->
+        <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+    </nav>
+
+
+    <!-- ============================================================
+         HERO SECTION
+    ============================================================ -->
+    <section class="hero" id="home" aria-label="Hero introduction">
+
+        <!-- Decorative background orbs (pure visual, hidden from screen readers) -->
+        <div class="hero-orb orb-1" aria-hidden="true"></div>
+        <div class="hero-orb orb-2" aria-hidden="true"></div>
+        <div class="hero-orb orb-3" aria-hidden="true"></div>
+
+        <!-- Tech grid overlay -->
+        <div class="hero-grid" aria-hidden="true"></div>
+
+        <!-- Main hero content -->
+        <div class="hero-content">
+
+            <!-- Status pill -->
+            <div class="hero-tag" role="status">
+                <span class="tag-dot" aria-hidden="true"></span>
+                CSE AIML Student &amp; Free Fire E-Athlete
+            </div>
+
+            <!-- Main name heading — H1 is the most important heading on the page -->
+            <h1 class="hero-title">
+                ATHARVA<br>
+                <span class="hero-title-highlight">MANGESH</span><br>
+                MAHADIK
+            </h1>
+
+            <p class="hero-subtitle">
+                Passionate about
+                <span class="highlight-text">Artificial Intelligence</span>,
+                <span class="highlight-text">Machine Learning</span>
+                &amp; <span class="highlight-gaming">Competitive Gaming</span>
+            </p>
+
+            <!-- Call-to-action buttons -->
+            <div class="hero-buttons">
+                <a href="#about"   class="btn btn-primary">Explore Portfolio</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator" aria-hidden="true">
+            <div class="scroll-dot"></div>
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         ABOUT ME SECTION
+    ============================================================ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title" id="about-title">About <span class="gradient-text">Me</span></h2>
+                <div class="section-line" aria-hidden="true"></div>
+            </div>
+
+            <div class="about-grid">
+
+                <!-- Profile photo -->
+                <div class="about-photo-wrapper">
+                    <div class="photo-glow-ring">
+                        <!--
+                            IMPORTANT: The image file must be placed at:
+                            assets/images/1000184461.jpg
+
+                            If the image is still at the project root,
+                            change src to: 1000184461.jpg
+                        -->
+                        <img
+                            src="assets/images/1000184461.jpg"
+                            alt="Atharva Mangesh Mahadik — profile photo"
+                            class="profile-photo"
+                            width="230"
+                            height="295"
+                            loading="eager"
+                            onerror="this.src='1000184461.jpg'"
+                        >
+                        <!-- onerror fallback: if assets/images/ path fails,
+                             try the root path (for local dev before moving files) -->
+                    </div>
+                    <div class="photo-badge" role="status">
+                        <span class="badge-dot" aria-hidden="true"></span>
+                        Available for Projects
+                    </div>
+                </div>
+
+                <!-- About text -->
+                <div class="about-text">
+                    <h3 class="about-greeting">Hello, I'm <span class="gradient-text">Atharva!</span></h3>
+                    <p class="about-para">
+                        My name is <strong>ATHARVA MAHADIK</strong>. I am a CSE AIML student
+                        who is deeply interested in technology, programming, Artificial Intelligence,
+                        and gaming.
+                    </p>
+                    <p class="about-para">
+                        I enjoy learning new programming languages and improving my problem-solving
+                        skills. I am also passionate about
+                        <span class="highlight-gaming">FREE FIRE</span>
+                        and competitive gaming — it sharpens my decision-making and team coordination.
+                    </p>
+
+                    <!-- Personal information cards -->
+                    <div class="info-cards" role="list">
+
+                        <div class="info-card" role="listitem">
+                            <div class="info-icon" aria-hidden="true">👤</div>
+                            <div class="info-details">
+                                <span class="info-label">Name</span>
+                                <span class="info-value">Atharva Mahadik</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card" role="listitem">
+                            <div class="info-icon" aria-hidden="true">🎓</div>
+                            <div class="info-details">
+                                <span class="info-label">Branch</span>
+                                <span class="info-value">CSE AIML</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card" role="listitem">
+                            <div class="info-icon" aria-hidden="true">💻</div>
+                            <div class="info-details">
+                                <span class="info-label">Interest</span>
+                                <span class="info-value">Programming &amp; Gaming</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card" role="listitem">
+                            <div class="info-icon" aria-hidden="true">🎮</div>
+                            <div class="info-details">
+                                <span class="info-label">Game</span>
+                                <span class="info-value">FREE FIRE</span>
+                            </div>
+                        </div>
+
+                    </div><!-- end info-cards -->
+                </div><!-- end about-text -->
+
+            </div><!-- end about-grid -->
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         EDUCATION SECTION
+    ============================================================ -->
+    <section class="section section-alt" id="education" aria-labelledby="education-title">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title" id="education-title">My <span class="gradient-text">Education</span></h2>
+                <div class="section-line" aria-hidden="true"></div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="timeline" role="list">
+
+                <div class="timeline-item" role="listitem">
+                    <div class="timeline-connector" aria-hidden="true">
+                        <div class="timeline-dot active-dot"></div>
+                        <div class="timeline-line"></div>
+                    </div>
+                    <div class="timeline-card glass-card">
+                        <div class="timeline-status status-active">Currently Studying</div>
+                        <h3 class="timeline-degree">B.Tech</h3>
+                        <p class="timeline-field">Computer Science &amp; Engineering — AIML</p>
+                        <div class="timeline-meta">
+                            <span class="timeline-icon" aria-hidden="true">🏛️</span>
+                            <span>Engineering College</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" role="listitem">
+                    <div class="timeline-connector" aria-hidden="true">
+                        <div class="timeline-dot completed-dot"></div>
+                        <div class="timeline-line"></div>
+                    </div>
+                    <div class="timeline-card glass-card">
+                        <div class="timeline-status status-done">Completed</div>
+                        <h3 class="timeline-degree">Higher Secondary (12th)</h3>
+                        <p class="timeline-field">Science Stream</p>
+                        <div class="timeline-meta">
+                            <span class="timeline-icon" aria-hidden="true">📚</span>
+                            <span>Science &amp; Mathematics</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- end timeline -->
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         TECHNICAL SKILLS SECTION
+    ============================================================ -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title" id="skills-title">Technical <span class="gradient-text">Skills</span></h2>
+                <div class="section-line" aria-hidden="true"></div>
+                <p class="section-subtitle">Technologies I'm learning and growing with</p>
+            </div>
+
+            <div class="skills-grid" role="list">
+
+                <div class="skill-card glass-card" role="listitem">
+                    <div class="skill-icon" aria-hidden="true">🌐</div>
+                    <h4 class="skill-name">HTML</h4>
+                    <div class="skill-level-text">Basic</div>
+                    <div class="skill-bar-track" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="HTML skill level: 50%">
+                        <div class="skill-bar-fill" style="--skill-width: 50%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-card" role="listitem">
+                    <div class="skill-icon" aria-hidden="true">☕</div>
+                    <h4 class="skill-name">Java</h4>
+                    <div class="skill-level-text">Learning</div>
+                    <div class="skill-bar-track" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" aria-label="Java skill level: 30%">
+                        <div class="skill-bar-fill" style="--skill-width: 30%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-card" role="listitem">
+                    <div class="skill-icon" aria-hidden="true">⚙️</div>
+                    <h4 class="skill-name">C / C++</h4>
+                    <div class="skill-level-text">Basic</div>
+                    <div class="skill-bar-track" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" aria-label="C/C++ skill level: 45%">
+                        <div class="skill-bar-fill" style="--skill-width: 45%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-card" role="listitem">
+                    <div class="skill-icon" aria-hidden="true">🐍</div>
+                    <h4 class="skill-name">Python</h4>
+                    <div class="skill-level-text">Learning</div>
+                    <div class="skill-bar-track" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" aria-label="Python skill level: 35%">
+                        <div class="skill-bar-fill" style="--skill-width: 35%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-card" role="listitem">
+                    <div class="skill-icon" aria-hidden="true">🤖</div>
+                    <h4 class="skill-name">Artificial Intelligence</h4>
+                    <div class="skill-level-text">Learning</div>
+                    <div class="skill-bar-track" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" aria-label="AI skill level: 25%">
+                        <div class="skill-bar-fill" style="--skill-width: 25%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-card" role="listitem">
+                    <div class="skill-icon" aria-hidden="true">📊</div>
+                    <h4 class="skill-name">Machine Learning</h4>
+                    <div class="skill-level-text">Learning</div>
+                    <div class="skill-bar-track" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" aria-label="ML skill level: 20%">
+                        <div class="skill-bar-fill" style="--skill-width: 20%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-card" role="listitem">
+                    <div class="skill-icon" aria-hidden="true">🔗</div>
+                    <h4 class="skill-name">DSA</h4>
+                    <div class="skill-level-text">Learning</div>
+                    <div class="skill-bar-track" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" aria-label="DSA skill level: 30%">
+                        <div class="skill-bar-fill" style="--skill-width: 30%"></div>
+                    </div>
+                </div>
+
+            </div><!-- end skills-grid -->
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         FREE FIRE GAMING SECTION
+    ============================================================ -->
+    <section class="section gaming-section" id="gaming" aria-labelledby="gaming-title">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title gaming-title" id="gaming-title">
+                    🔥 FREE FIRE <span class="gaming-gradient-text">PLAYER ZONE</span> 🔥
+                </h2>
+                <div class="section-line gaming-line" aria-hidden="true"></div>
+                <p class="section-subtitle">Where strategy meets skill</p>
+            </div>
+
+            <!-- Stats banner -->
+            <div class="gaming-banner glass-card gaming-glass" role="list">
+
+                <div class="gaming-stat" role="listitem">
+                    <div class="gaming-stat-icon" aria-hidden="true">🎮</div>
+                    <div class="gaming-stat-label">Game</div>
+                    <div class="gaming-stat-value">FREE FIRE</div>
+                </div>
+
+                <div class="gaming-divider" aria-hidden="true"></div>
+
+                <div class="gaming-stat" role="listitem">
+                    <div class="gaming-stat-icon" aria-hidden="true">🎯</div>
+                    <div class="gaming-stat-label">Role</div>
+                    <div class="gaming-stat-value">SNIPER</div>
+                </div>
+
+                <div class="gaming-divider" aria-hidden="true"></div>
+
+                <div class="gaming-stat" role="listitem">
+                    <div class="gaming-stat-icon" aria-hidden="true">🏆</div>
+                    <div class="gaming-stat-label">Interest</div>
+                    <div class="gaming-stat-value">Competitive Gaming</div>
+                </div>
+
+            </div>
+
+            <h3 class="gaming-sub-heading">Gaming Strengths</h3>
+
+            <div class="gaming-strengths-grid" role="list">
+
+                <div class="gaming-strength-card" role="listitem">
+                    <div class="gaming-strength-icon" aria-hidden="true">🤝</div>
+                    <span>Team Coordination</span>
+                </div>
+
+                <div class="gaming-strength-card" role="listitem">
+                    <div class="gaming-strength-icon" aria-hidden="true">⚡</div>
+                    <span>Quick Decision Making</span>
+                </div>
+
+                <div class="gaming-strength-card" role="listitem">
+                    <div class="gaming-strength-icon" aria-hidden="true">🧠</div>
+                    <span>Game Sense</span>
+                </div>
+
+                <div class="gaming-strength-card" role="listitem">
+                    <div class="gaming-strength-icon" aria-hidden="true">📡</div>
+                    <span>Team Communication</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         MY STRENGTHS SECTION
+    ============================================================ -->
+    <section class="section section-alt" id="strengths" aria-labelledby="strengths-title">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title" id="strengths-title">My <span class="gradient-text">Strengths</span></h2>
+                <div class="section-line" aria-hidden="true"></div>
+            </div>
+
+            <div class="strengths-grid" role="list">
+
+                <div class="strength-card glass-card" role="listitem">
+                    <div class="strength-icon" aria-hidden="true">🧩</div>
+                    <h4 class="strength-name">Problem Solving</h4>
+                    <p class="strength-desc">I enjoy solving programming problems and tackling complex challenges.</p>
+                </div>
+
+                <div class="strength-card glass-card" role="listitem">
+                    <div class="strength-icon" aria-hidden="true">👥</div>
+                    <h4 class="strength-name">Teamwork</h4>
+                    <p class="strength-desc">I can work effectively and collaboratively within a team environment.</p>
+                </div>
+
+                <div class="strength-card glass-card" role="listitem">
+                    <div class="strength-icon" aria-hidden="true">📖</div>
+                    <h4 class="strength-name">Continuous Learning</h4>
+                    <p class="strength-desc">I have a passion for learning new technologies and staying up to date.</p>
+                </div>
+
+                <div class="strength-card glass-card" role="listitem">
+                    <div class="strength-icon" aria-hidden="true">🎮</div>
+                    <h4 class="strength-name">Gaming Mindset</h4>
+                    <p class="strength-desc">Gaming helps improve my decision-making speed and strategic thinking.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         FUTURE GOALS SECTION
+    ============================================================ -->
+    <section class="section" id="goals" aria-labelledby="goals-title">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title" id="goals-title">Future <span class="gradient-text">Goals</span></h2>
+                <div class="section-line" aria-hidden="true"></div>
+                <p class="section-subtitle">The milestones I'm working towards</p>
+            </div>
+
+            <div class="goals-list" role="list">
+
+                <div class="goal-item glass-card" role="listitem">
+                    <div class="goal-number" aria-hidden="true">01</div>
+                    <div class="goal-text">
+                        <h4>Software Developer</h4>
+                        <p>Become a skilled software developer with expertise in modern technologies.</p>
+                    </div>
+                    <div class="goal-arrow" aria-hidden="true">→</div>
+                </div>
+
+                <div class="goal-item glass-card" role="listitem">
+                    <div class="goal-number" aria-hidden="true">02</div>
+                    <div class="goal-text">
+                        <h4>AI &amp; Machine Learning</h4>
+                        <p>Learn Artificial Intelligence and Machine Learning in depth.</p>
+                    </div>
+                    <div class="goal-arrow" aria-hidden="true">→</div>
+                </div>
+
+                <div class="goal-item glass-card" role="listitem">
+                    <div class="goal-number" aria-hidden="true">03</div>
+                    <div class="goal-text">
+                        <h4>Data Structures &amp; Algorithms</h4>
+                        <p>Improve my DSA skills for competitive programming and interviews.</p>
+                    </div>
+                    <div class="goal-arrow" aria-hidden="true">→</div>
+                </div>
+
+                <div class="goal-item glass-card" role="listitem">
+                    <div class="goal-number" aria-hidden="true">04</div>
+                    <div class="goal-text">
+                        <h4>Real-World Projects</h4>
+                        <p>Build impactful, real-world projects that solve actual problems.</p>
+                    </div>
+                    <div class="goal-arrow" aria-hidden="true">→</div>
+                </div>
+
+                <div class="goal-item glass-card" role="listitem">
+                    <div class="goal-number" aria-hidden="true">05</div>
+                    <div class="goal-text">
+                        <h4>Hackathons &amp; Competitions</h4>
+                        <p>Participate in hackathons, coding contests, and tech competitions.</p>
+                    </div>
+                    <div class="goal-arrow" aria-hidden="true">→</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         PROJECT IDEAS SECTION
+    ============================================================ -->
+    <section class="section section-alt" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title" id="projects-title">Project <span class="gradient-text">Ideas</span></h2>
+                <div class="section-line" aria-hidden="true"></div>
+                <p class="section-subtitle">Concepts I want to bring to life</p>
+            </div>
+
+            <div class="projects-grid" role="list">
+
+                <article class="project-card glass-card" role="listitem">
+                    <div class="project-card-header">
+                        <div class="project-icon" aria-hidden="true">🤖</div>
+                        <div class="project-status">Idea</div>
+                    </div>
+                    <h3 class="project-name">AI Chatbot</h3>
+                    <p class="project-desc">
+                        A conversational chatbot powered by Artificial Intelligence that can
+                        understand and answer user questions intelligently.
+                    </p>
+                    <div class="project-tags" aria-label="Technologies">
+                        <span class="tag">Python</span>
+                        <span class="tag">AI</span>
+                        <span class="tag">NLP</span>
+                    </div>
+                </article>
+
+                <article class="project-card glass-card" role="listitem">
+                    <div class="project-card-header">
+                        <div class="project-icon" aria-hidden="true">🏫</div>
+                        <div class="project-status">Idea</div>
+                    </div>
+                    <h3 class="project-name">Student Management System</h3>
+                    <p class="project-desc">
+                        A web-based system to efficiently manage and organise student
+                        information, records, and academic data.
+                    </p>
+                    <div class="project-tags" aria-label="Technologies">
+                        <span class="tag">Java</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">Database</span>
+                    </div>
+                </article>
+
+                <article class="project-card glass-card" role="listitem">
+                    <div class="project-card-header">
+                        <div class="project-icon" aria-hidden="true">📈</div>
+                        <div class="project-status">Idea</div>
+                    </div>
+                    <h3 class="project-name">Gaming Statistics Website</h3>
+                    <p class="project-desc">
+                        A dedicated website to track and display detailed gaming statistics,
+                        leaderboards, and performance analytics.
+                    </p>
+                    <div class="project-tags" aria-label="Technologies">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         CONTACT SECTION
+    ============================================================ -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title" id="contact-title">Get In <span class="gradient-text">Touch</span></h2>
+                <div class="section-line" aria-hidden="true"></div>
+                <p class="section-subtitle">Feel free to reach out for collaborations or just a hello!</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-card glass-card">
+
+                    <div class="contact-top-icon" aria-hidden="true">📬</div>
+                    <h3 class="contact-heading">Let's Connect</h3>
+                    <p class="contact-intro">
+                        I'm always open to discussing new projects, tech ideas,
+                        or opportunities in the world of AI and development.
+                    </p>
+
+                    <div class="contact-details">
+
+                        <div class="contact-row">
+                            <div class="contact-row-icon" aria-hidden="true">✉️</div>
+                            <div class="contact-row-content">
+                                <span class="contact-row-label">Email</span>
+                                <a href="mailto:atharvm0522@gmail.com"
+                                   class="contact-row-value contact-email"
+                                   aria-label="Send email to atharvm0522@gmail.com">
+                                    atharvm0522@gmail.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-row">
+                            <div class="contact-row-icon" aria-hidden="true">🎓</div>
+                            <div class="contact-row-content">
+                                <span class="contact-row-label">Field</span>
+                                <span class="contact-row-value">CSE AIML</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-row">
+                            <div class="contact-row-icon" aria-hidden="true">💡</div>
+                            <div class="contact-row-content">
+                                <span class="contact-row-label">Interest</span>
+                                <span class="contact-row-value">Programming &amp; Gaming</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a href="mailto:atharvm0522@gmail.com" class="btn btn-primary contact-btn">
+                        Send Me an Email
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         FOOTER
+    ============================================================ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <p class="footer-thanks">🙏 THANK YOU FOR VISITING MY PORTFOLIO</p>
+            <p class="footer-brand">
+                <span class="gradient-text">Atharva Mangesh Mahadik</span>
+            </p>
+            <p class="footer-copy">© 2026 Atharva Mangesh Mahadik. All rights reserved.</p>
+            <p class="footer-tag">CSE AIML Student &nbsp;•&nbsp; Free Fire E-Athlete &nbsp;•&nbsp; Future AI Developer</p>
+        </div>
+    </footer>
+
+
+    <!-- ============================================================
+         SCROLL-TO-TOP BUTTON
+    ============================================================ -->
+    <a href="#home" class="scroll-top" id="scroll-top" aria-label="Back to top" role="button">↑</a>
+
+
+    <!-- ============================================================
+         JAVASCRIPT — loaded at end of body so HTML renders first
+    ============================================================ -->
+    <script src="script.js"></script>
+
+</body>
+</html>
