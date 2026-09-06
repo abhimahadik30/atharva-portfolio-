@@ -2,8 +2,7 @@
 
 Personal portfolio website for **Atharva Mangesh Mahadik**, a CSE AIML student passionate about Artificial Intelligence, Machine Learning, Software Development, and competitive gaming (Free Fire).
 
-**Live URL:** [https://USERNAME.github.io/atharva-portfolio/]
-(https://github.com/abhimahadik30/atharva-portfolio-)
+**Live URL:** https://github.com/abhimahadik30/atharva-portfolio-
 *(Replace USERNAME with your actual GitHub username after deployment)*
 
 ---
